@@ -12,7 +12,7 @@ jobs:
 
     steps:
     - name: Check Backend Status
-      with:
+      env:
         url: ${{ secrets.url }}
         endpoint: ${{ secrets.endpoint }}
-    - run: curl -f --no-progress-meter "$url$endpoint"
+      run: curl -f --no-progress-meter "$url$endpoint"
