@@ -15,4 +15,4 @@ jobs:
       with:
         url: ${{ secrets.url }}
         endpoint: ${{ secrets.endpoint }}
-      run: curl -f --no-progress-meter "$url$endpoint"
+    - run: curl -f --no-progress-meter "$url$endpoint"
